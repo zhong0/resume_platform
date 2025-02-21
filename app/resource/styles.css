@@ -61,6 +61,92 @@
     transition: background-image 0.3s ease-in-out;
 }
 
+.homepage_upload_icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('./icon/upload.png'); 
+    background-size: contain;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.homepage_upload_icon:hover {
+    background-image: url('./icon/upload_on.png');
+}
+
+.homepage_upload_overlay {
+    display: none; /* 預設隱藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.homepage_upload_modal {
+    position: relative;
+    background: #B98C3C;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1pt solid #383C38
+    
+}
+
+.homepage_upload_modal_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-family: 'Great Vibes', cursive;
+}
+
+.homepage_upload_input {
+    max-width: 90%;
+    min-width: 90%;
+    height: 450px;
+    border: 1px solid #383C38;
+    padding: 10px;
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+    font-size: 18px;
+}
+
+.homepage_uploadjson_btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #383C38;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+}
+
+.homepage_close_modal_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+}
+
+.homepage_close_modal_btn:hover {
+    color: #383C38;
+}
+
 
 
 .homepage_icon_phone { background-image: url('./icon/telephone.png'); }
@@ -138,3 +224,62 @@
     color: #383C38;
     font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
   }
+
+
+.all_title_horizontal_line {
+    display: flex;
+    align-items: center;
+    width: 70%; /* 控制線的總長度 */
+    position: relative;
+    transform: translateY(-7vh); 
+}
+
+.all_title_horizontal_line::before,
+.all_title_horizontal_line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #FFF;
+}
+
+.workExp_horizontal_line {
+    display: flex;
+    align-items: center;
+    width: 70%; /* 控制線的總長度 */
+    position: relative;
+    transform: translateY(-30vh); 
+}
+
+
+.workExp_horizontal_line::before,
+.workExp_horizontal_line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #383C38;
+}
+
+.all_title_text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36pt;
+    color: #FFF;
+}
+
+.all_content_text {
+    color: #535953;
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+}
+
+.all_message_box {
+    display: none;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    background-color: rgba(185, 140, 60, 0.8);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
