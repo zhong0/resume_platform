@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.fp-watermark {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
+}
+
+.section { 
+    text-align: center; 
+    font-size: 2em; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#section1 { background: #383C38}
+#section2 { background: #B98C3C }
+#section3 { background: #FAF1E9 }
+
+.homepage_facePic {
+    width: 180px;
+    height: 180px;
+    background: url('./images/facePic_wz0.jpg') no-repeat center/cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-position: center top -10px;
+}
+.homepage_horizontal_container{
+    display: flex;
+    padding: 5px;
+}
+
+.homepage_vertical_container {
+    display: flex;
+    flex-direction: column; /* 讓內容垂直排列 */
+    justify-content: end; /* 垂直置中 */
+    margin-left: 20px;
+}
+
+.homepage_name{
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+    color: #FFF;
+}
+
+.homepage_icon_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.homepage_icon {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+
+
+.homepage_icon_phone { background-image: url('./icon/telephone.png'); }
+.homepage_icon_email { background-image: url('./icon/email.png'); }
+.homepage_icon_github { background-image: url('./icon/github.png'); }
+.homepage_icon_linkedin { background-image: url('./icon/linkedin.png'); }
+
+.homepage_icon_phone:hover { background-image: url('./icon/telephone_on.png'); }
+.homepage_icon_email:hover { background-image: url('./icon/email_on.png'); }
+.homepage_icon_github:hover { background-image: url('./icon/github_on.png'); }
+.homepage_icon_linkedin:hover { background-image: url('./icon/linkedin_on.png'); }
+
+.homepage_horizontal_line {
+    display: flex;
+    align-items: center;
+    width: 70%; /* 控制線的總長度 */
+    position: relative;
+    margin-top: 30px;
+}
+
+.homepage_horizontal_line::before,
+.homepage_horizontal_line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #FFF;
+}
+
+.homepage_resume_text {
+    padding: 0 20px;
+    font-size: 16px;
+    font-style: italic;
+    color: #FFF;
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+}
+
+.homepage_box {
+    width: 250px;
+    height: 80px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px; /* 使文字垂直置中 */
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    color: #FFF;
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+}
+
+.homepage_box:hover {
+    width: 250px;
+    height: 80px;
+    border: 1px solid #383C38;
+    background-color: #FFF;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px; /* 使文字垂直置中 */
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    color: #383C38;
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+}
+
+.homepage_box.active {
+    width: 250px;
+    height: 80px;
+    border: 1px solid #383C38;
+    background-color: #FFF;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px; /* 使文字垂直置中 */
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    color: #383C38;
+    font-family: "SimSun", "NSimSun", "Songti SC", "PMingLiU", serif;
+  }
