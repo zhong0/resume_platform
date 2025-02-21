@@ -1,0 +1,10 @@
+pandas
+ipython
+pillow
+pymongo
+fastapi
+uvicorn
+Jinja2
+python-multipart
+bcrypt
+pycryptodome
